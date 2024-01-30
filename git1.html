@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	Updated by Ashy
+-->
+<html>
+	<head>
+		<title>Project 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>ColesVsWooles Web Scraping</h1>
+						<p>Automated Web Scraping Coles Vs Woolies using Selenium</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+
+								<h2>Intro</h2>
+								<p>This was a project I did in June of 2021 to compare prices of two biggest retail shopping brands in Australia - Coles and Woolworths Code uses Selenium to web scrape data from coles and woolworths and populates gathered data into Google Sheets using 'Google sheet API'. Gathered data in sheet can be used to compare price of products for like to like items. Object-Oriented Programming is used for user to use the project as per needed..</p>
+
+								<h2>Setting up</h2>
+								<p><li> Install the Selenium Python library and place a ChromeDriver executable on your path. chrome_driver_path = "\\\chromedriver.exe" </li>
+									<li> Install dependencies - 'Selenium' and 'future' via pip install or other prefered method(s) </li>
+									<li> Register an account with google colud and get API KEY. You may need to setup google platform account ID for credentials </li>
+<pre><code>get account - https://cloud.google.com/<br>
+setup project - https://console.cloud.google.com/home/dashboard?authuser=1&project="YOUR PROJECT NAME"<br>
+get keys -https://console.cloud.google.com/iam-admin/serviceaccounts/details </code></pre>
+								</p>
+								<h2>Logic</h2>
+								<p>coles.py has code for scraping coles site by suburb and item where both are set as strings for inputs, output is a JSON woolies.py has the code for scraping woolworths site by item where input is a string as well, output is a JSON Both files add their brand name in fornt of the serach field for relevent result to be shown. This result then can be compered to get price deffierence and further data analysis. Output spreadsheet and be even taken as a form or outputed as a form (Google forms) for better visual representation. Google sheet is used as a simple form of database here. googlesheet1.py is where the google sheet API lives. Output from above two methods are passed in as .JSON main.py is where all three files are called and excecuted to get final results popultaed in the sheet.
+
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<h2>Certifications</h2>
+						<p>Azure AZ-400 Designing and Implementing Microsoft DevOps Solutions (currently undertaking)<br>
+							Enginner Australia Membersip<br>
+							WA White Card<br>
+							First - Aid WA
+						</p>
+
+					</section>
+					<section>
+						<h2>Ashish Andhari</h2>
+						<dl class="alt">
+							<dt>Address</dt>
+							<dd>Canning Vale WA</dd>
+							<dt>Phone</dt>
+							<dd>Please email for contact number</dd>
+							<dt>Email</dt>
+							<dd><a href="mailto:ashwork9191@gmail.com">ashwork9191@gmail.com</a></dd>
+						</dl>
+
+					</section>
+					<p class="copyright">&copy; Ashish A </p>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
